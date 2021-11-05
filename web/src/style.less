@@ -1,0 +1,59 @@
+// reset
+* {
+  box-sizing: border-box;
+  outline: none; // 去掉高亮
+}
+
+html {
+  font-size: 13px; // 基础字体
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background: #f1f1f1;
+}
+
+a {
+  color: #999;
+}
+
+//主色调
+  @color-primary: #db9e3f;
+  @color-white: #fff;
+  @color-light: #f9f9f9;
+  @color-grey: #999;
+  @clor-black:#000;
+  @color-dark:#222;
+
+  //字体
+  @font-xs:10/13rem;
+  @font-sm:12/13rem;
+  @font-md:1rem;
+  @font-lg:14/13rem;
+  @font-xl:16/13rem;
+
+  // flex
+  .d-flex{
+    display: flex;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .flex-center{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .w-100{
+    width: 100%;
+  }
+
+  .text-ellipsis{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
