@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     async login(){
-      const res =await this.$http.post(window.location.host+'/admin/api/login',this.model)
+      const res =await this.$http.post(`http://${window.location.host}/admin/api/login`,this.model)
       localStorage.token=res.data.token //在浏览器关闭后还能访问到 sessionStorage 关闭后无了
       this.$router.push('/')
       this.$message.success('登录成功')
